@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*colors*/
+/*fonts*/
+/*font-size*/
+/*extend*/
+.a_tag, body .header .nav a,
+body .header .language a {
+  text-decoration: none;
+  padding: 8px;
+  color: #969292;
+}
+
+.h1, body .bigbar-content .bigbar-header {
+  font-family: "Raleway", sans-serif;
+  margin-top: 80px;
+  color: #383434;
+  word-spacing: 5px;
+}
+
+.h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.p, body .bigbar-content .bigbar-text, body .bigbar2, body .moze .moze-content .card-body p, body .footer p {
+  font-family: "Raleway", sans-serif;
+  color: #969292;
+  font-weight: lighter;
+  margin-top: 30px;
+}
+
+body {
+  margin-top: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+body .header {
+  height: 200px;
+  background-color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+body .header .logo {
+  position: relative;
+}
+
+body .header .logo .language {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+body .header .logo img {
+  display: block;
+  width: 300px;
+  padding: 50px 0px;
+}
+
+body .header .nav,
+body .header .language {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+body .header .nav a:hover,
+body .header .language a:hover {
+  color: #000;
+}
+
+body .header .nav span,
+body .header .language span {
+  color: #969292;
+  margin: 0px 15px;
+}
+
+body .bigbar-content {
+  text-align: center;
+}
+
+body .bigbar-content .bigbar-text {
+  font-size: 22px;
+}
+
+body .bigbar-content .button {
+  width: 150px;
+  color: #675e9c;
+  padding: 10px 22px;
+  background-color: #fff;
+  border: 2px solid #675e9c;
+  border-radius: 30px;
+  margin-top: 30px;
+}
+
+body .bigbar-content .button:hover {
+  border: 2px solid #000;
+  color: #000;
+}
+
+body .bigbar2 {
+  text-align: center;
+}
+
+body .bigbar2 img {
+  width: 240px;
+  height: 350px;
+  display: block;
+  margin: 40px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body .bigbar2 img:hover {
+  width: 250px;
+  height: 360px;
+}
+
+body .moze {
+  background-color: #333333;
+}
+
+body .moze .moze-content {
+  text-align: center;
+  color: #fff;
+}
+
+body .moze .moze-content .card-body p {
+  color: #fff;
+  font-size: 17px;
+}
+
+body .moze .moze-content img {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: auto;
+}
+
+body .footer {
+  height: 200px;
+  margin-top: 150px;
+}
+
+body .footer p {
+  text-align: center;
+}
+
+body .footer .social {
+  margin-top: 20px;
+}
+
+body .footer .social i {
+  margin: 10px;
+  font-size: 30px;
+  color: #7344be;
+}
+
+body .footer .social i:hover {
+  color: #21b199;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*colors*/
+
+$black:#000;
+$light-gray:rgb(150, 146, 146);
+$dark-gray:rgb(56, 52, 52);
+
+/*fonts*/
+
+$f_open:'Open Sans',
+sans-serif;
+$f_raleway:'Raleway',
+sans-serif;
+
+/*font-size*/
+
+$f16:16px;
+$f17:17px;
+$f22:22px;
+
+/*extend*/
+
+.a_tag {
+    text-decoration: none;
+    padding: 8px;
+    color: $light-gray;
+}
+
+.h1 {
+    font-family: $f_raleway;
+    margin-top: 80px;
+    color: $dark-gray;
+    word-spacing: 5px;
+}
+
+.h2 {
+    font-family: $f_open;
+    font-weight: 400;
+}
+
+.p {
+    font-family: $f_raleway;
+    color: $light-gray;
+    font-weight: lighter;
+    margin-top: 30px;
+}
+
+@mixin button($width, $color, $padtb, $padrl, $bg, $border, $borderrad, $margin) {
+    width: $width;
+    color: $color;
+    padding: $padtb $padrl;
+    background-color: $bg;
+    border: $border;
+    border-radius: $borderrad;
+    margin-top: $margin;
+}
+
+body {
+    margin-top: 0;
+    font-family: $f_raleway;
+    .header {
+        height: 200px;
+        background-color: #fff;
+        position: sticky;
+        top: 0;
+        .logo {
+            position: relative;
+            .language {
+                position: absolute;
+                top: 10px;
+                right: 30px;
+            }
+            img {
+                display: block;
+                width: 300px;
+                padding: 50px 0px;
+            }
+        }
+        .nav,
+        .language {
+            font-family: $f_raleway;
+            font-size: $f16;
+            a {
+                @extend .a_tag;
+            }
+            a:hover {
+                color: $black;
+            }
+            span {
+                color: $light-gray;
+                margin: 0px 15px;
+            }
+        }
+    }
+    .bigbar-content {
+        text-align: center;
+        .bigbar-header {
+            @extend .h1;
+        }
+        .bigbar-text {
+            @extend .p;
+            font-size: $f22;
+        }
+        .button {
+            @include button(150px, rgb(103, 94, 156), 10px, 22px, #fff, 2px solid rgb(103, 94, 156), 30px, 30px);
+            &:hover {
+                border: 2px solid $black;
+                color: $black;
+            }
+        }
+    }
+    .bigbar2 {
+        @extend .p;
+        text-align: center;
+        img {
+            width: 240px;
+            height: 350px;
+            display: block;
+            margin: 40px;
+            transition: all 0.5s;
+            &:hover {
+                width: 250px;
+                height: 360px;
+            }
+        }
+    }
+    .moze {
+        background-color: #333333;
+        .moze-content {
+            text-align: center;
+            color: #fff;
+            .card-body {
+                p {
+                    @extend .p;
+                    color: #fff;
+                    font-size: $f17;
+                }
+            }
+            img {
+                display: block;
+                width: 150px;
+                height: auto;
+                margin: auto;
+            }
+        }
+    }
+    .footer {
+        height: 200px;
+        margin-top: 150px;
+        p {
+            text-align: center;
+            @extend .p;
+        }
+        .social {
+            margin-top: 20px;
+            i {
+                margin: 10px;
+                font-size: 30px;
+                color: rgb(115, 68, 190);
+                &:hover {
+                    color: rgb(33, 177, 153);
+                }
+            }
+        }
+    }
+}
